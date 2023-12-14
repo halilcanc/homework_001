@@ -1,0 +1,229 @@
+            /*ANASAYFA CSS BÖLÜMÜ */
+  @import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,300;0,500;0,600;0,700;1,400&display=swap');
+  @import url('https://fonts.googleapis.com/css2? family= Poppins:ital,wght@0,300;0,500;0,600;0,700;1,400 & family= Roboto+Slab:wght@200;300 & göster=değiştir');
+  @import url('https://fonts.googleapis.com/css2? family= Lora:ital,wght@0,400;0,500;1,400 & family= Poppins:ital,wght@0,300;0,500;0,600;0,700; 1.400 & family= Roboto+Slab:wght@200;300 & display=değiştir');
+  @import url('https://fonts.googleapis.com/css2?family=Josefin+Sans:ital,wght@0,100;0,200;0,300;1,100;1,200;1,500&family=Lora:ital,wght@0,400;0,500;1,400&family=Merriweather:ital,wght@0,300;0,400;1,300&family=Poppins:ital,wght@0,300;0,500;0,600;0,700;1,400&family=Roboto+Slab:wght@200;300&display=swap');
+  @import url('https://fonts.googleapis.com/css2?family=Josefin+Sans:ital,wght@0,100;0,200;0,300;1,100;1,200;1,500&family=Lora:ital,wght@0,400;0,500;1,400&family=Merriweather:ital,wght@0,300;0,400;1,300&family=Montserrat:wght@100;200&family=Poppins:ital,wght@0,300;0,500;0,600;0,700;1,400&family=Roboto+Slab:wght@200;300&display=swap');
+  @import url('https://fonts.googleapis.com/css2?family=Josefin+Sans:ital,wght@0,100;0,200;0,300;1,100;1,200;1,500&family=Lato:ital,wght@0,300;1,100;1,300&family=Lora:ital,wght@0,400;0,500;1,400&family=Merriweather:ital,wght@0,300;0,400;1,300&family=Montserrat:wght@100;200&family=Poppins:ital,wght@0,300;0,500;0,600;0,700;1,400&family=Roboto+Slab:wght@200;300&display=swap');
+
+
+  * {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    outline: none;
+    border: none;
+    text-decoration: none;
+    text-transform: capitalize;
+    transition: 0.2s ease;
+  }
+
+  :root {
+    --main-color: #00090f;
+    --black-color: #1b1b1c;
+    --border: 0.1rem solid rgba(255,255,255,0.4);
+  }
+
+
+  /*BASIC HTML CODE */
+  html {
+    font-size: 62.5%;
+    overflow-x: hidden;
+    scroll-padding-top: 9rem;
+    scroll-behavior: smooth;
+  }
+
+  .anasayfa {
+    background-image:url(images/homebgimage.jpeg);
+    background-size: cover;
+    
+    background-position: center;
+  
+   
+   
+
+  }
+  
+
+  
+
+
+
+  /* header başı*/
+
+  .header .logo img {
+    margin-top: 0.4rem;
+    height: 9rem;
+  }
+
+  .header .navbar {
+    margin-right: 10rem;
+  }
+  .header{
+    background-color: white;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 3%;
+    margin: 2rem 7%;
+    border-radius: 30rem;
+    box-shadow: 0px 0px 17px -px rgba(0 0 0 0.75 );
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+  }
+
+  .header .navbar a {
+    font-size: 1.6rem;
+    margin: 2rem;
+    color: var(--black-color);
+    border-bottom: 0.1rem solid transparent;
+  }
+
+  .header .navbar .active,
+  .header .navbar a:hover {
+    border-color: var(--main-color);
+    padding-bottom: 0.5rem;
+  }
+
+  .header .buttons button {
+    cursor: pointer;
+    font-size: 2.5rem;
+    margin-left: 2rem;
+    background-color: transparent;
+  }
+  /* header sonu*/
+  
+
+
+
+  /* home section start*/
+
+
+  .home {
+    min-height: 102vh ;
+    background-size: cover;
+    background-position: center;
+    margin-top: -15.1rem;
+    display: flex;
+    align-items: center;
+    height: 100%;
+  }
+
+  .home .contect {
+    max-width: 60rem; 
+  }
+
+  .home .contect h3 {
+    font-size: 5rem;
+    font-family: 'Roboto Slab', serif;
+    color:aliceblue;
+    padding: 0rem 0rem 0rem 7rem;
+  }
+
+  .home .contect p {
+    font-size: 1.5rem;
+    font-family:'Poppins', sans-serif;;
+    color: aliceblue;
+    padding: 2.8rem 0rem 0rem 6.7rem;
+  }
+
+
+  /* home section end*/
+
+
+
+
+
+
+
+  /* güncel haberler start*
+
+
+  .habercubugu {
+    background: rgb(247, 244, 244);
+    height: 5rem;
+    display: flex;
+    margin-top: 4rem;
+    padding: 0.3rem 6%;
+    border-top-right-radius: 25rem;
+    border-bottom-right-radius: 25rem;
+    width: 55rem;
+  }
+
+  .haberler h1 span {
+    font-size: 3.5rem;
+    font-family: 'Lora' , serif;
+    color:  rgb(3, 29, 69);
+    align-items: center;
+  }
+
+  .haberler h1 {
+    font-size: 3.5rem;
+    font-family: 'Lora' , serif;
+    color: rgb(10, 28, 43);
+    align-items: center;
+  }
+
+  .haberler .box .box-head img {
+    margin-top: 5rem;
+    height: 15rem;
+    position: relative; top:8px; left: 3rem; 
+  }
+
+
+
+
+  /* güncel haberler end*/
+
+
+
+
+
+
+
+
+            /*ANASAYFA CSS BÖLÜM SONU */
+
+
+
+
+            /*PROJELER CSS BÖLÜMÜ*/
+  .uyarı{
+    color: aliceblue;
+    position: relative; top:400px; left: 400px;
+    font-size: 65px;
+  }
+
+  .projects {
+    background-color: #0a1318;
+    height: 1200px;
+  }
+
+ 
+  .t1 {
+    width: 200px;
+    height: 200px;
+    border: 2px solid;
+    border-color: rgb(3, 99, 133);
+    background-color: rgb(238, 243, 243);
+    position: relative; top: 50px; left: 50px;
+  }
+
+
+  .t2 {
+    width: 200px;
+    height: 200px;
+    border: 2px solid;
+    border-color: rgb(3, 99, 133);
+    background-color: rgb(238, 243, 243);
+    position: relative; top:50px; left: 100px;
+  }
+
+            /*PROJELER CSS BÖLÜM SONU*/
+
+
+
+
+
+
